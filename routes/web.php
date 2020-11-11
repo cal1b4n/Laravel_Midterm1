@@ -18,7 +18,9 @@ Route::get('/', function () {
 });
 
 Route::get('/companies', 'App\Http\Controllers\CompanyController@index');
-Route::post('/companies/create', 'App\Http\Controllers\ComapnyController@create');
+Route::get('/companies/create', 'App\Http\Controllers\ComapnyController@create');
+Route::post('/companies/store', 'App\Http\Controllers\CompanyController@store');
 
 Route::get('/employees', 'App\Http\Controllers\EmployeesController@index');
-Route::post('/employees/create', 'App\Http\Controllers\EmployeesController@create');
+Route::get('/employees/create', 'App\Http\Controllers\EmployeesController@create');
+Route::get('/employees/store', 'App\Http\Controllers\EmployeesController@store');
